@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class = 'form text-center'>
+    
+    <form action="predict" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="image"><h1>Upload an Image</h1></label>
+            <center><input type="file" name="image" id="image"></center>
+            <br>
+            <button type="submit" class="btn btn-primary"><h4>Upload</h4></button>
+        </div>
+    </form>
+    
+</div>
+{% endblock %}
